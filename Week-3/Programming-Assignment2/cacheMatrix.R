@@ -12,7 +12,7 @@ setinverse <- function(inverse) inv <<- inverse  ## assigns value of inv in pare
 getinverse <- function() inv                     ## gets the value of inv where called
 list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)  ## you need this in order to refer 
 }
-+## then cacheSolve will retrieve the inverse from the cache
+## then cacheSolve will retrieve the inverse from the cache
 cacheSolve <- function(x, ...) {
 ## Return a matrix that is the inverse of 'x'
 inv <- x$getinverse()
